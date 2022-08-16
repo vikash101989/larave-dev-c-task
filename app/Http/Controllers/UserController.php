@@ -55,8 +55,8 @@ class UserController extends Controller
             ]);
         }
         //data set welcome email
-       $details['to'] = 'vikashks101989@gmail.com';
-       $details['name'] = $request->get('name');
+       $details['to'] = $email;
+       $details['name'] = $name;
        $details['subject'] = 'Welcome text message';
        $details['message'] = 'You are member of this organization.';
        //send message via job and queue
